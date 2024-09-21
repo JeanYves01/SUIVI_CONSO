@@ -47,7 +47,7 @@ export default function Default(props) {
       <Text color='#FFC163' fontSize='xl' transform='translate(7%,50%)'>Energie consommée</Text>
       <Flex gap='5px' transform='translate(7%,60%)' color='#FFC163'>
         <Icon  w='20px' h='35px' as={MdBolt} />
-        <Text fontSize='xl' transform='translate(5%,7%)'>90 kWh</Text>
+        <Text fontSize='xl' transform='translate(5%,7%)'>40 kWh</Text>
       </Flex>
 
 

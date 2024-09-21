@@ -53,7 +53,8 @@ export default function HeaderLinks(props) {
 			p="10px"
 			borderRadius="30px"
 			boxShadow={shadow}>
-			<SearchBar mb={secondary ? { base: '10px', md: 'unset' } : 'unset'} me="10px" borderRadius="30px" />
+			
+			{/* <SearchBar mb={secondary ? { base: '10px', md: 'unset' } : 'unset'} me="10px" borderRadius="30px" /> */}
 
 			<SidebarResponsive routes={routes} />
 			<Menu>
@@ -81,6 +82,7 @@ export default function HeaderLinks(props) {
 
 				</MenuList>
 			</Menu>
+			<Text padding='10px'>13209026</Text>
 
 
 

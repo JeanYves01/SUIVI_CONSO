@@ -6,25 +6,18 @@ import {
   Tr,
   Th,
   Td,
-  TableCaption,
   TableContainer,
   Box,
-  Button,
-  Flex,
-  Icon,
   Text,
   SimpleGrid,
+  Button,
   Grid,
-  useColorModeValue,
-} from '@chakra-ui/react'
-import MiniStatistics from "components/card/MiniStatistics";
-import DropdownCalendar from "views/admin/rapport/components/Calendrier";
-import DownloadButton from "views/admin/rapport/components/DownloadButton";
-import Card from "components/card/Card.js";
+} from '@chakra-ui/react';
 import DatePicke from './DatePicker';
+import DownloadButton from './DownloadButton';
+import Card from "components/card/Card.js";
 
 export default function DevelopmentTable(props) {
-
   return (
     <Card mt={{ base: "50px", md: "80px", xl: "76px", }} height={{ base: '120vh', md: '75vh', lg: '75vh' }} bg='white' transform='translate(0%, 7%)'>
       <Box width={{ base: '100%', md: '90%', lg: '100%' }} mx='auto' transform={{base:'translate(0%, -10%)', md:'translate(0%, -23%)', lg:'translate(0%, -23%)'}} height='50vh'>
@@ -50,7 +43,6 @@ export default function DevelopmentTable(props) {
             </Text>
             <Box display='flex' alignItems='center' gap={{ base: '20px', md: '80px', lg: '80px' }} flexDirection={{ base: 'column', md: 'row' }} >
               <DatePicke />
-
               <DownloadButton />
             </Box>
           </Box>
@@ -63,7 +55,7 @@ export default function DevelopmentTable(props) {
             mt='15px'
             justifyContent='center'
           >
-            {['Rapport 1', 'Rapport 2', 'Rapport 3', 'Rapport 4'].map((rapport, index) => (
+            {['Avril', 'Mai', ' Juin', 'Juillet'].map((rapport, index) => (
               <Box
                 key={index}
                 bg='white'
@@ -96,6 +88,7 @@ export default function DevelopmentTable(props) {
           </SimpleGrid>
         </Grid>
         <TableContainer
+          id='table-to-download'
           justifyContent='center'
           width='100%'
           height={{ base: 'auto', md: '45vh' }}
@@ -136,117 +129,116 @@ export default function DevelopmentTable(props) {
         </TableContainer>
       </Box>
     </Card>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   );
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 

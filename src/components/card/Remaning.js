@@ -46,7 +46,7 @@ export default function Default(props) {
       <Text color='white' fontSize='xl' transform='translate(-10%,-25%)'>Energie restante</Text>
       <Flex gap='5px' transform='translate(-10%,0%)' color='white'>
         <Icon  w='20px' h='35px' as={MdBolt}  />
-        <Text fontSize='xl' transform='translate(5%,7%)'>90 kWh</Text>
+        <Text fontSize='xl' transform='translate(5%,7%)'>50 kWh</Text>
       </Flex>
 
 

@@ -19,7 +19,7 @@ export default function Alerte() {
   const textColorBrand = useColorModeValue("brand.500", "white");
   return (
     <Box height='35vh' bg='white' boxShadow="1px 2px 3px rgba(0, 0, 0, 0.3)" borderRadius='10px'>
-      <Text fontSize='xl' transform='translate(5%, 5%)'>Alerte heure par heure</Text>
+      <Text fontSize='xl' transform='translate(5%, 5%)'>Alerte heure par heure en fonction du seuil</Text>
       <Flex justifyContent='center' transform='translate(0%,15%)' gap={{ base: "6px", md: "10px", lg: "10px", }}>
         <Box width={{ base: "23%", md: "21%", lg: "21%", }} height='25vh' borderRadius='15px' boxShadow="4px 4px 8px rgba(0, 0, 0, 0.5)" bg='white' transform={{base:'translate(-10%,-5%)', base:'translate(0%,-5%)', base:'translate(0%,-5%)'}}
         _hover={{

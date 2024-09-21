@@ -26,7 +26,7 @@ export default function CircularProgressCountUp() {
       <Flex>
         <CircularProgress value={63} size="98px" thickness="6px" color="#FFC163" transform={{base: 'translate(30%,0%)', md: 'translate(80%,0%)', lg: 'translate(80%,0%)'}} />
         <CircularProgressLabel position="fixed" color="black" fontWeight="bold" fontSize transform={{ base: 'translate(-72%,790%)', md: 'translate(-36.5%,-306%)', lg: 'translate(-36%,-295%)', }} >
-          18kwh
+          18kw
         </CircularProgressLabel>
         {/* <Flex flexDirection='column' transform='translate(90%,25%)'>
         <Radio size='sm' name='1' colorScheme='orange' mb='10px'>

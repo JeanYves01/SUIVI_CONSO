@@ -10,75 +10,75 @@ const data = [
   {
     name: 'Jan',
 
-    Conso: 2400,
+    Conso: 24,
 
   },
   {
     name: 'Fev',
 
-    Conso: 3600,
+    Conso: 36,
 
   },
   {
     name: 'Mar',
 
-    Conso: 2000,
+    Conso: 20,
 
   },
   {
     name: 'Avl',
 
-    Conso: 1000,
+    Conso: 10,
 
   },
   {
     name: 'Mai',
 
-    Conso: 1700,
+    Conso: 17,
 
   },
   {
     name: 'Jun',
 
-    Conso: 3600,
+    Conso: 36,
 
   },
   {
     name: 'Jul',
 
-    Conso: 3500,
+    Conso: 5,
 
   },
-  {
-    name: 'Aout',
+  // {
+  //   name: 'Aout',
 
-    Conso: 3000,
+  //   Conso: 3000,
 
-  },
-  {
-    name: 'Sep',
+  // },
+  // {
+  //   name: 'Sep',
 
-    Conso: 3000,
+  //   Conso: 3000,
 
-  },
-  {
-    name: 'Oct',
+  // },
+  // {
+  //   name: 'Oct',
 
-    Conso: 1500,
+  //   Conso: 1500,
 
-  },
-  {
-    name: 'Nov',
+  // },
+  // {
+  //   name: 'Nov',
 
-    Conso: 3200,
+  //   Conso: 3200,
 
-  },
-  {
-    name: 'Dec',
+  // },
+  // {
+  //   name: 'Dec',
 
-    Conso: 3600,
+  //   Conso: 3600,
 
-  },
+  // },
 ];
 
 export default class Example extends PureComponent {

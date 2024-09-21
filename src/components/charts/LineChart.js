@@ -14,14 +14,14 @@ import {
 
 export default function MyLineChart (props) {
   const data = [
-    { name: 'Sem 1', Conso: 5200 },
-    { name: 'Sem 2', Conso: 9000 },
-    { name: 'Sem 3', Conso: 5000 },
-    { name: 'Sem 4', Conso: 5300 },
-    { name: 'Sem 5', Conso: 1800 },
-    { name: 'Sem 6', Conso: 2100 },
-    { name: 'Sem 7', Conso: 1200 },
-    { name: 'Sem 8', Conso: 4300 },
+    { name: 'Sem 1', Conso: 20 },
+    { name: 'Sem 2', Conso: 40 },
+    { name: 'Sem 3', Conso: 20 },
+    { name: 'Sem 4', Conso: 23 },
+    { name: 'Sem 5', Conso: 18 },
+    { name: 'Sem 6', Conso: 21 },
+    { name: 'Sem 7', Conso: 12 },
+    { name: 'Sem 8', Conso: 43 },
   ];
    
   return (

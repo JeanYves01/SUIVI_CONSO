@@ -18,45 +18,45 @@ import {
 export default function MyLineChart(props) {
   const data = [
     {
-      name: '07:02:10',
+      name: '07:00',
      
-      Conso: 220,
+      Conso: 2,
       
     },
     {
-      name: '07:02:20',
+      name: '07:10',
      
-      Conso: 306,
+      Conso: 3,
       
     },
     {
-      name: '07:02:30',
+      name: '07:20',
      
-      Conso: 100,
+      Conso: 1,
       
     },
     {
-      name: '07:02:40',
+      name: '07:30',
      
-      Conso: 340,
+      Conso: 3,
       
     },
     {
-      name: '07:02:50',
+      name: '07:40',
      
-      Conso: 215,
+      Conso: 2,
       
     },
     {
-      name: '07:03:00',
+      name: '07:50',
      
-      Conso: 402,
+      Conso: 4,
       
     },
     {
-      name: '07:03:10',
+      name: '07:60',
      
-      Conso: 190,
+      Conso: 1,
       
     },
   ];

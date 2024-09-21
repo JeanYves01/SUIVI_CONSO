@@ -73,16 +73,16 @@ export default function Conso() {
                 }}>
                 <Flex flexDirection='column' gap={{base:'20px', md: '20px', lg:'35px'}}>
                   <Flex justifyContent='center' >
-                    <Text color='#008F75' fontSize='2xl' transform={{ base: 'translate(-20%,20%)', md: 'translate(-35%,20%)', lg: 'translate(-55%,20%)', }} >+15kWh</Text>
-                    <Flex transform={{ base: 'translate(10%,70%)', md: 'translate(73%,62%)', lg: 'translate(75%,70%)', }} width={{ base: "30%", md: "23%", lg: "20%", }} height='3vh' bg='#008F75' borderRadius='5px'>
+                    <Text color='red' fontSize='2xl' transform={{ base: 'translate(-20%,20%)', md: 'translate(-35%,20%)', lg: 'translate(-55%,20%)', }} >+15kWh</Text>
+                    <Flex transform={{ base: 'translate(10%,70%)', md: 'translate(73%,62%)', lg: 'translate(75%,70%)', }} width={{ base: "30%", md: "23%", lg: "20%", }} height='3vh' bg='red' borderRadius='5px'>
                       <Text fontSize='sm' color='#FFFFFF'>+12%</Text>
                       <Icon w='20px' h='35px' as={MdTrendingUp} color='#FFFFFF' transform='translate(2%,-18%)' />
                     </Flex>
 
                   </Flex>
                   <Flex flexDirection='row' gap='10px'  transform={{ base: 'translate(0%,-15%)', md: 'translate(8%,-15%)', lg: 'translate(7%,-15%)', }} >
-                    <Icon mt='5px' w='20px' h='20px' as={MdBarChart} color='#008F75' />
-                    <Text fontSize={{ base: 'xl', md: 'xl', lg: 'xl', }}  color='#008F75' transform={{ base: 'translate(-4%,0%)', md: 'translate(0%,0%)', lg: 'translate(0%,0%)', }} >Consommation</Text>
+                    <Icon mt='5px' w='20px' h='20px' as={MdBarChart} color='red' />
+                    <Text fontSize={{ base: 'xl', md: 'xl', lg: 'xl', }}  color='red' transform={{ base: 'translate(-4%,0%)', md: 'translate(0%,0%)', lg: 'translate(0%,0%)', }} >Consommation</Text>
 
                   </Flex>
                 </Flex>
@@ -102,7 +102,7 @@ export default function Conso() {
                 }}>
                 <Flex flexDirection='column' gap='35px'>
                   <Flex justifyContent='center' transform={{ base: 'translate(-18%,20%)', md: 'translate(-31%,20%)', lg: 'translate(-31%,20%)', }}>
-                    <Icon w='20px' h='35px' as={MdArrowDownward} color='white' />
+                    {/* <Icon w='20px' h='35px' as={MdArrowDownward} color='white' /> */}
                     <Text color='white' fontSize='2xl'>218 V</Text>
                   </Flex>
                   <Flex flexDirection='row' gap='20px' transform='translate(8%,-15%)' >
