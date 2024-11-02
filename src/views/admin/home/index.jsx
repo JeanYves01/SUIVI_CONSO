@@ -102,11 +102,7 @@ export default function UserReports() {
                 transform: 'scale(1.05)',
                 transition: 'all 0.3s ease-in-out' // Ajout de la transition
               }}>
-              <Seuil
-
-
-
-              />
+              <Seuil/>
             </MenuButton>
             <MenuList boxShadow='4px 0px 10px rgba(0,0,0,0.2)' p="0px" mt="10px" borderRadius="15px" bg={menuBg} border="none" height='25vh'>
               <Flex w="100%" mb="0px" gap='5px' borderBottom="1px solid" borderColor={borderColor}>
@@ -178,7 +174,6 @@ export default function UserReports() {
 
         <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px' mb='20px' height='40%'>
           <TotalSpent />
-
         </SimpleGrid>
       </Box>
     </Card>

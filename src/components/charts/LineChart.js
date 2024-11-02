@@ -11,18 +11,20 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+const generateData = () => {
+  const weeks = 12; // Nombre de semaines
+  let data = [];
+  for (let i = 1; i <= weeks; i++) {
+    data.push({
+      name: `Sem ${i}`,
+      Conso: Math.floor(Math.random() * 50) + 10, // Génère une consommation entre 10 et 60
+    });
+  }
+  return data;
+};
 
 export default function MyLineChart (props) {
-  const data = [
-    { name: 'Sem 1', Conso: 20 },
-    { name: 'Sem 2', Conso: 40 },
-    { name: 'Sem 3', Conso: 20 },
-    { name: 'Sem 4', Conso: 23 },
-    { name: 'Sem 5', Conso: 18 },
-    { name: 'Sem 6', Conso: 21 },
-    { name: 'Sem 7', Conso: 12 },
-    { name: 'Sem 8', Conso: 43 },
-  ];
+  const data = generateData()
    
   return (
     <Flex justify="center" align="center" height="300px">

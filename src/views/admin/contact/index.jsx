@@ -117,7 +117,7 @@ const ContactForm = () => {
                 <Box
                     bg='white'
                     width={{ base: '100%', md: '100%' }}
-                    border='1px solid #5a5858'
+                    boxShadow='0px 0px 10px rgba(0, 0, 0, 0.3)'
                     borderLeftRadius={{ base: '10px', md: '10px' }}
                     p={{ base: '20px', md: '0' }}
                 >
@@ -198,7 +198,13 @@ const ContactForm = () => {
                                         w='100%'
                                         h='50'
                                         mb='24px'
-                                        borderRadius='10px'>
+                                        borderRadius='10px'
+                                        boxShadow='0px 0px 10px rgba(0, 0, 0, 0.3)'
+                                        _hover={{
+                                            bg:'#EF7D00',
+                                            transform:'scale(1.1)',
+                                            transition:'all 0.3s ease-in-out'
+                                        }}>
                                         Envoyer
                                     </MenuButton>
                                     <MenuList boxShadow='lg' p="0px" ml={{ base: '0px', md: '410px', lg: '770px' }} mb={{ base: '120px', md: '370px', lg: '400px' }} borderRadius="15px" bg='white' border="none" height='10vh'>
@@ -222,7 +228,7 @@ const ContactForm = () => {
                 <Box
                     width={{ base: '100%', md: '100%' }}
                     borderRightRadius={{ base: '0px', md: '10px' }}
-                    border='1px solid #a8a8a8'
+                    boxShadow='0px 0px 10px rgba(0, 0, 0, 0.3)'
                     bgImage={`url(${backgroundImage})`}
                     bgSize='cover'
                     bgPosition='center'

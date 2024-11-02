@@ -8,12 +8,11 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 // Custom components
-import Card from "components/card/Card.js";
+
 import LineChart from "components/charts/LineChart";
-import DropdownCalendar from "views/admin/rapport/components/Calendrier";
+
 import React from "react";
-import { IoCheckmarkCircle } from "react-icons/io5";
-import { MdBarChart, MdOutlineCalendarToday } from "react-icons/md";
+
 // Assets
 import { RiArrowUpSFill } from "react-icons/ri";
 import {

@@ -25,6 +25,8 @@ function SignUp() {
   const [nomComplet, setNomComplet] = useState('');
   const [email, setEmail] = useState('');
   const [motDePasse, setMotDePasse] = useState('');
+  const [errorMessage, setErrorMessage] = useState(""); // État pour stocker le message d'erreur
+  const [successMessage, setSuccessMessage] = useState(""); // État pour stocker le message de succès
   const [sensorNumber, setsensorNumber] = useState('');
 
   const handleClick = () => setShow(!show);
@@ -39,12 +41,15 @@ function SignUp() {
           console.log('Utilisateur créé avec succès', response.data);
           setIsLoading(false);
           setIsSuccess(true);
+
           setTimeout(() => {
             history.push('/inscr/signIn');
-          }, 2000); // Redirect to sign-in page after 2 seconds
+          }, 5000); // Redirect to sign-in page after 2 seconds
+          setSuccessMessage("Inscription réussie!");
         })
         .catch(error => {
           console.error('Erreur lors de la création de l\'utilisateur!', error);
+          setErrorMessage("L'utilisateur existe déjà!");
           setIsLoading(false);
         });
     }, 3000); // Simulate longer loading time by adding a 3-second delay
@@ -62,11 +67,25 @@ function SignUp() {
         justifyContent='center'
         padding='10px'
         borderRadius='15px'
+        boxShadow='0px 0px 10px rgba(0, 0, 0, 0.2)'
         bg='white'
         mb={{ base: '30px', md: '60px' }}
         px={{ base: '25px', md: '0px' }}
         mt={{ base: '40px', md: '14vh' }}
         flexDirection='column'>
+
+        {successMessage && (
+          <Text
+            color="green.500"
+            mb="20px"
+            textAlign="center"
+            transform='translate(50%,0%)'
+            fontSize="lg"
+            fontWeight="bold"
+          >
+            {successMessage}
+          </Text>
+        )}
         <Box me='auto'>
           <Heading color={textColor} fontSize='36px' mb='8px' transform={{ base: 'translate(45%)', md: 'translate(60%)', lg: 'translate(60%)' }}>
             Inscription
@@ -181,12 +200,16 @@ function SignUp() {
                 onChange={(e) => setsensorNumber(e.target.value)}
               />
             </InputGroup>
+
+            {errorMessage && <Text color="red.500" mb="15px">{errorMessage}</Text>}
             <Button
               color='white'
               fontSize='xl-s'
               background={btnColor}
+              boxShadow='0px 0px 10px rgba(0, 0, 0, 0.3)'
               _hover={{
                 bg: '#EF7D00',
+                transform: 'scale(1.1)',
                 opacity: '1',
                 transition: 'all 0.3s ease-in-out'
               }}
@@ -195,18 +218,23 @@ function SignUp() {
               h='50px'
               mb='15px'
               onClick={handleSignUp}
-              isLoading={isLoading}>
+              isLoading={isLoading}
+              loadingText="Inscription en cours...">
               {isLoading ? <Spinner size='sm' /> : 'Créer un compte'}
             </Button>
           </FormControl>
-          {isSuccess && (
+          {/* {isSuccess && (
             <Box color={orange} transform='translate(40%,-1800%)'>
-              <Text color='green.500' fontWeight='500' mt='10px' >
+              <Text color="green.500"
+                mb="20px"
+                textAlign="center"
+                fontSize="lg"
+                fontWeight="bold">
                 Inscription réussie!
               </Text>
             </Box>
 
-          )}
+          )} */}
           <Flex
             flexDirection='column'
             justifyContent='center'
