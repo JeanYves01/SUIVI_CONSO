@@ -23,10 +23,7 @@ const User = sequelize.define('User', {
     type: DataTypes.STRING,
     allowNull: false
   },
-  // numCompt: {
-  //   type: DataTypes.INTEGER,
-  //   allowNull: false
-  // }
+  
 }, {
   tableName: 'users'
 });
